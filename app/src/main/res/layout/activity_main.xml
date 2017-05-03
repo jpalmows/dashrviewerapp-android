@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+    <!-- The main content view -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="dashr.app.com.dashrviewapp.MainActivity"
+        android:background="@android:color/black">
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="4"
+                android:layout_weight=".4"
+                android:layout_marginTop="1dp"
+                >
+
+
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/menuicon"
+                    android:id="@+id/menuButton"
+                    android:tint="@android:color/white"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:layout_weight=".2"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:onClick="menuOpen"
+                    android:visibility="visible"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:gravity="bottom"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/text2"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:gravity="bottom"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/text3"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:layout_marginTop="1dp"
+                android:id="@+id/row1">
+
+
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginRight="1dp"
+                        android:text="Drill Name 1"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:gravity="bottom"
+                        android:id="@+id/lane1drillText"
+                        />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Drill Name 2"
+                    android:textAlignment="center"
+                    android:gravity="bottom"
+                    android:layout_marginRight="1dp"
+                    android:textColor="#ffffff"
+
+                    android:id="@+id/lane2drillText"
+                     />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Drill Name 3"
+                    android:textAlignment="center"
+                    android:gravity="bottom"
+                    android:layout_marginRight="1dp"
+                    android:textColor="#ffffff"
+
+                    android:id="@+id/lane3drillText"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:id="@+id/row2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:text="0.00"
+                    android:textSize="50dp"
+                    android:textAlignment="center"
+                    android:gravity="bottom"
+                    android:id="@+id/time1lane1"
+                    android:textColor="#ffffff"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:text="0.00"
+                    android:textSize="50dp"
+                    android:textAlignment="center"
+                    android:gravity="bottom"
+                    android:id="@+id/time1lane2"
+                    android:textColor="#ffffff"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:text="0.00"
+                    android:textSize="50dp"
+                    android:textAlignment="center"
+                    android:gravity="bottom"
+                    android:id="@+id/time1lane3"
+                    android:textColor="#ffffff"
+
+                    />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:id="@+id/row3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:text="0.00"
+                    android:textSize="50dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:id="@+id/time2lane1"
+                    android:textColor="#ffffff"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:text="0.00"
+                    android:textSize="50dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:id="@+id/time2lane2"
+                    android:textColor="#ffffff"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:text="0.00"
+                    android:textSize="50dp"
+                    android:textAlignment="center"
+                    android:gravity="top"
+                    android:id="@+id/time2lane3"
+                    android:textColor="#ffffff"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:weightSum="3"
+                android:layout_weight="1"
+                android:id="@+id/row4">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/lane1idTextField"
+                    android:textStyle="normal|bold"
+                    android:hint="ID:"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="3"
+                    android:elevation="0dp"
+                    android:gravity="top|center_horizontal"
+                    android:background="@android:color/transparent" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/lane2idTextField"
+                    android:textStyle="normal|bold"
+                    android:hint="ID:"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="3"
+                    android:elevation="0dp"
+                    android:gravity="top|center_horizontal"
+
+                    android:background="@android:color/transparent" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/lane3idTextField"
+                    android:textStyle="normal|bold"
+                    android:hint="ID:"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="3"
+                    android:elevation="0dp"
+                    android:gravity="top|center_horizontal"
+                    android:background="@android:color/transparent" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5"
+                android:layout_weight=".6"
+                android:layout_marginTop="1dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:gravity="bottom"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/text4"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textAlignment="center"
+                    android:gravity="bottom"
+                    android:layout_marginRight="1dp"
+                    android:id="@+id/text5"
+                    />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/dashrlogo3"
+                    android:id="@+id/logo"
+                    android:tint="@android:color/white"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+                    android:onClick="menuOpen"
+                    android:visibility="visible"
+                    android:layout_alignParentTop="true"
+                    android:adjustViewBounds="true" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <!-- The navigation drawer -->
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:choiceMode="none"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="20dp"
+        android:background="?android:attr/detailsElementBackground" />
+</android.support.v4.widget.DrawerLayout>

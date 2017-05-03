@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DashrViewApp</string>
+    <string name="ble_uuid">08e3c0ed-8f7d-3c0a-8e9d-e6b75c818957</string>
+    <string name="ble_uuid2">0b90a665-e5b2-3981-a969-bea59aa87362</string>
+
+
+    <string-array name="planets_array">
+        <item>Add Lane</item>
+        <item>Remove Lane</item>
+        <item>Extend Range</item>
+
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+</resources>
