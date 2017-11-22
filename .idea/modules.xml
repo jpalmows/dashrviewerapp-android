@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DashrViewApp.iml" filepath="$PROJECT_DIR$/DashrViewApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dashrviewerapp-android.iml" filepath="$PROJECT_DIR$/dashrviewerapp-android.iml" />
     </modules>
   </component>
 </project>

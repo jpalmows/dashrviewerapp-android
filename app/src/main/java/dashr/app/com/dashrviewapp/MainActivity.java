@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity implements BluetoothAdapter.
 
         arr = hex.toCharArray();
 
-        String deviceidHex = hex.substring(14, 20);
+        String deviceidHex = hex.substring(18, 24);
         String deviceidASCII = hexToASCII(deviceidHex);
         System.out.println("lane 1 text field: " + lane1idTextField.getText().toString());
         System.out.println("device ascii: "+deviceidASCII);
@@ -203,9 +203,10 @@ public class MainActivity extends AppCompatActivity implements BluetoothAdapter.
         if (lane1idTextField.getText().toString().equals(deviceidASCII) || lane2idTextField.getText().toString().equals(deviceidASCII) || lane3idTextField.getText().toString().equals(deviceidASCII) ) {
 
             timeDelay = SystemClock.uptimeMillis();
-            currentDrillHex = hex.substring(20, 22);
-            time1View1Hex = hex.substring(24, 28);
-            time2View1Hex = hex.substring(28, 32);
+
+            currentDrillHex = hex.substring(24, 26);
+            time1View1Hex = hex.substring(28, 32);
+            time2View1Hex = hex.substring(32, 36);
             deviceName = device.getName();
 
             if (lane1idTextField.getText().toString().equals(deviceidASCII)) {
